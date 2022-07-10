@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+echo "# project-1.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/tvarun2306/project-1.github.io.git
+git push -u origin main
+    
+<title>Sample home page</title>
+<style>
+*{
+    box-sizing: border-box;
+    }
+
+    body,html{
+              height:100vh;
+    }
+    body{
+        margin:5px;
+        
+        display:grid;
+        grid-template-columns:auto 27% 27% 27% ;
+        grid-template-rows: 30% 20% auto 15% 10%;
+        grid-template-areas:
+        "navbar navbar navbar navbar"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer"
+        "reference reference reference reference";
+        
+    }
+    
+    main{
+        grid-area:main;
+        background-color:#dbf285;
+        border-radius:7px;
+        margin:5px;
+        padding:10px;
+        font-size:15px;
+    }
+        navbar{
+        grid-area:navbar;
+        background-color:#f5b562;
+        border-radius:8px;
+        margin:5px;
+        padding:10px;
+        
+        
+    }
+        sidebar{
+        grid-area:sidebar;
+        background-color:#fccb6f;
+        border-radius:8px;
+        margin:5px;
+        padding:10px;
+        color:white;
+    }
+    content1{
+        grid-area:content1;
+        background-color:#f7e286;
+        border-radius:8px;
+        margin:5px;
+        padding-left:25%;
+        padding-right:25%;
+        padding-top:25%;
+        padding-bottom:25%;
+        
+    }
+    content2{
+        grid-area:content2;
+        background-color:#eff08d;
+        border-radius:8px;
+        margin:5px;
+        padding-left:25%; 
+        padding-right:25%;
+        padding-top:25%;
+        padding-bottom:25%;
+       
+    }
+    content3{
+        grid-area:content3;
+        background-color:#f5f4a6;
+        border-radius:8px;
+        margin:5px;
+        padding-left:25%;
+        padding-right:25%;
+        padding-top:25%;
+        padding-bottom:25%;
+        
+    }
+    footer{
+        grid-area:footer;
+        background-color:#d7f5a6;
+        border-radius:8px;
+        margin:5px;
+        padding:10px;
+    }
+    
+    reference{
+        grid-area:reference;
+        background-color:#dae87d;
+        border-radius:8px;
+        padding:10px;
+        
+    }
+    
+    .logo{
+            border-radius:7px;
+        }
+    .ind1{
+            
+            border-radius:10px;
+            object-fit:cover;
+        }
+    .chi1{
+            border-radius:10px;
+            object-fit:cover;
+            
+        }    
+    .ita1{
+            border-radius:10px;
+            object-fit:cover;
+        }
+        
+    ul{
+        margin:10px;
+        padding:10px;
+        
+        border-radius:8px;
+    }    
+    
+    ul:hover{
+        color:white;
+        background-color:#f7c45e;
+    }
+    sidebar:hover
+    {
+        color:pink;    
+    }
+    
+    .ind{
+        width:90%;
+        margin: 25px auto;
+        shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+        transition:1s;
+    } 
+    
+    .ind:hover{
+        transform:scale(1.2);
+        
+    }
+    
+    .chi{
+        width:90%;
+        margin:25px;
+        shadow: 0 0 20px 2px rgba(0 0 0 0.1);
+         
+        transition:1s;
+    }
+    
+    .chi:hover{
+        transform:scale(1.2);
+        
+    }
+    
+    .ita{
+        margin:25px;
+        transition:1s;
+        
+    }
+    .ita:hover{
+        transform:scale(1.2);
+    }
+    
+    .ind-s{
+        padding-bottom:5px;
+         padding-left:25%;
+        padding-right:25%
+        margin:10px;
+        border-radius:10px;
+    }
+    .chi-d{
+        padding-bottom:5px;
+         padding-left:25%;
+        padding-right:25%
+        margin:10px;
+        border-radius:10px;
+
+        
+    }
+    .ita-d{
+        padding-bottom:5px;
+         padding-left:25%;
+        padding-right:25%
+        margin:10px;
+        border-radius:10px;
+
+    }
+    
+    .rev{
+        border-radius:5px;
+        background-color:#f7f2ad;
+    }
+    .sub{
+        border-radius:10px;
+        background-color:#f0ba6e;
+        
+    }
+    .sub:hover{
+        background-color:#f09ca1;
+        color:white;
+        margin:0px;
+        border:0px;
+    }
+   .fix{
+       position:static;
+   }
+   
+   .indm{
+      border-radius:7px;
+      width:100px;
+       
+   }
+   .chim{
+      border-radius:7px;
+      width:100px;
+       
+   }
+   .itam{
+      border-radius:7px;
+      width:100px;
+       
+   }
+    
+
+
+        
+       
+        
+    
+    
+    @media only screen and (max-width:600px)
+    {
+        .container{
+            margin:5px;
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:  0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+            grid-template-areas:
+            "navbar"
+            "sidebar"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer"
+            "reference";
+            
+            
+        }
+       
+    
+        
+        
+        
+        
+        
+    }
+    
+</style>
+<body class="container">
+<sidebar class="side">
+    <ul>
+        <li >
+            <a href=" " style="color:white;  ">Account</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Your-order</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Live-tracking</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Coupons</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Gifts</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Settings</a>
+        </li>
+        <br>
+        <li>
+            <a href=" "style="color:white;  ">Log-out</a>
+        </li>
+    </ul>
+</sidebar>
+<navbar>
+    <ul>
+        
+            <a href="file:///C:/Users/varun%20tiwari/Desktop/DSANOtes/rsponsiveCSS-grid1.htm?x=4&y=11 ">Home   </a>|
+        
+        
+        
+            <a href=" ">About-us  </a>|
+        
+        
+        
+            <a href=" ">Bookings  </a>|
+        
+        
+        
+            <a href=" ">Pickup-order  </a>|
+        
+        
+        
+            <a href=" ">Top-rated  </a>|
+        
+        
+        
+            <a href=" ">Most-ordered  </a>|
+        
+        
+        
+            <a href=" ">Contact-us  </a>
+        
+    </ul>
+   <img class= 'logo' src="https://bit.ly/3NHygMi" alt="logo" height=65px width=70px>
+    <h1 style="color:white">Tasty-treats</h1>
+   
+</navbar>
+<main>
+    <p style="color:#857156">From local chat to international cuisine, best of the most famouse food genre. We are focused on sticking to the orignal taste and methodes with a little addition of regional flavours, results in most delicious continental meal with a tint of familier home taste.</p>
+    
+</main>
+<content1 >
+    <form class="ind" onclick="alert('Indian')">
+        <input class= "ind1" type="image" src="https://bit.ly/3NAmOlT" alt="indian" height=100px width=100px>
+    </form>
+    
+    <br>
+    <input class="indm" value="Indian" type="button" onclick=" alert('Rs 100-150')"style="background-color:#f5df64">
+    <input class="indm"  value="Paneer" type="button" onclick=" alert('Rs 150')"style="background-color:#f5df64">
+    <input class="indm" value="Veg-Sabzi" type="button" onclick=" alert('Rs 120')"style="background-color:#f5df64">
+    <input class="indm" value="Breads" type="button" onclick=" alert('Rs 10-50/peice')"style="background-color:#f5df64">
+    <input class="indm" value="Papads" type="button" onclick=" alert('Rs 10-20/peice')"style="background-color:#f5df64">
+    <input class="indm"value="Dals" type="button" onclick=" alert('Rs 70-90')"style="background-color:#f5df64">
+    <input class="indm" value="Mithai" type="button" onclick=" alert('Rs 100-400/kg')"style="background-color:#f5df64">
+   
+     
+    
+</content1>
+<content2>
+    <form class="chi" onclick="alert('Chinese') ">
+        <input class="chi1" type="image" src="https://bit.ly/3aglk2j" alt="chinese" height=100px width=100px >
+        
+    </form>
+    
+    <br>
+    
+        <input class="chim" value="chinese" type="button" onclick=" alert('Rs 100-200')"style="background-color:#f5df64">
+        <input  class="chim" value="Noodles" type="button" onclick=" alert('Rs 100')"style="background-color:#f5df64">
+        <input class="chim"  value="Manchurian" type="button" onclick=" alert('Rs 100')"style="background-color:#f5df64">
+        <input class="chim"  value="Momos" type="button" onclick=" alert('Rs 60')"style="background-color:#f5df64">
+        <input class="chim"  value="Wasabi" type="button" onclick=" alert('Rs 200')"style="background-color:#f5df64">
+        <input class="chim"  value="Chili-paneer" type="button" onclick=" alert('Rs 150')"style="background-color:#f5df64">
+        <input class="chim"  value="Spring-roll" type="button" onclick=" alert('Rs 100')"style="background-color:#f5df64">
+        
+        
+    
+</content2>
+<content3>
+    <form class="ita" onclick="alert('Italian' )">
+        <input class="ita1" type="image" src="https://bit.ly/3IeFQNj"height=100px width=100px alt=" italian">
+        
+    </form>
+    
+    
+    <br>
+    <input class="itam" value="Italian" type="button" onclick=" alert('Rs 200-400')"style="background-color:#f5df64">
+    <input class="itam" value="Pizza" type="button" onclick=" alert('Rs 250')"style="background-color:#f5df64">
+    <input class="itam" value="Pasta" type="button" onclick=" alert('Rs 150')"style="background-color:#f5df64">
+    <input class="itam" value="Lasagne" type="button" onclick=" alert('Rs 250')"style="background-color:#f5df64">
+    <input class="itam" value="Risotto" type="button" onclick=" alert('Rs 350')"style="background-color:#f5df64">
+    <input class="itam" value="Carpaccio" type="button" onclick=" alert('Rs 400')"style="background-color:#f5df64">
+    <input class="itam" value="Polenta" type="button" onclick=" alert('Rs 280')"style="background-color:#f5df64">
+       
+        
+    
+</content3>
+<reference>  
+    <form> 
+    <input class="fix" name="fix" type="image" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" height=50 width=50 onclick="alert('Whatsapp number')">
+    
+</form>
+    Contact-us...
+</reference>
+<footer style="color:#857156">
+    Review<br>
+    <textarea class="rev "name="review" rows="2" column="6" maxlength="50"  style="background-color:#ebfcb1 color:#857156">
+"Please give us your valuable feedback"
+    </textarea><br>
+    <button class= "sub " name="submit" style="color:#857156" onclick="alert('review submitted')">Submite</button>
+</footer>
+
+</body>
+</html>
